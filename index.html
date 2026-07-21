@@ -52,7 +52,7 @@
   .hero{position:relative;padding:74px 0 38px}
   .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center}
   @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:24px}}
-  h1{font-family:var(--font-display);font-weight:700;line-height:1.02;letter-spacing:-.025em;font-size:clamp(44px,7vw,78px);text-wrap:balance;margin:20px 0 0}
+  h1{font-family:var(--font-display);font-weight:700;line-height:1.02;letter-spacing:0em;font-size:clamp(44px,7vw,78px);text-wrap:balance;margin:20px 0 0}
   h1 .accent{color:var(--orange)}
   .lede{margin-top:22px;font-size:clamp(16.5px,2.1vw,20px);color:var(--muted);max-width:36ch}
   .hero-meta{margin-top:18px;font-family:var(--font-mono);font-size:12.5px;color:var(--faint);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
@@ -82,18 +82,18 @@
   @media(max-width:640px){.strip-in{grid-template-columns:repeat(2,1fr);gap:22px 16px}}
   .stat .n{font-family:var(--font-mono);font-weight:500;font-size:clamp(26px,4vw,38px);letter-spacing:-.01em;font-variant-numeric:tabular-nums;color:var(--text)}
   .stat .n small{color:var(--orange);font-size:.6em;margin-left:1px}
-  .stat .l{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .stat .l{font-size:14px;color:var(--muted);margin-top:3px}
   section.blk{padding:92px 0}
   .sec-head{max-width:640px}
   .sec-head.center{margin:0 auto;text-align:center}
   .sec-head.center .eyebrow{justify-content:center}
-  .sec-head h2{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4.6vw,46px);letter-spacing:-.02em;line-height:1.08;margin:16px 0 0;text-wrap:balance}
+  .sec-head h2{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,4.6vw,46px);letter-spacing:0em;line-height:1.08;margin:16px 0 0;text-wrap:balance}
   .sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
   /* spotlight */
   .spot{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center;padding:38px;border-radius:22px;border:1px solid var(--hair);background:radial-gradient(700px 400px at 90% 0%,rgba(247,139,52,.08),transparent 60%),linear-gradient(180deg,#0e2039,#0a1728)}
   .spot.rev{grid-template-columns:1.05fr .95fr}
   @media(max-width:860px){.spot,.spot.rev{grid-template-columns:1fr;gap:26px;padding:26px}}
-  .spot h2{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:-.02em;margin-top:14px;line-height:1.08;text-wrap:balance}
+  .spot h2{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:0em;margin-top:14px;line-height:1.08;text-wrap:balance}
   .spot p{color:var(--muted);margin-top:15px;font-size:16px}
   /* milestone panel */
   .mpanel{border-radius:18px;border:1px solid var(--hair-2);overflow:hidden;background:linear-gradient(180deg,#0c1d33,#091628);box-shadow:0 30px 70px -32px rgba(0,0,0,.7)}
@@ -118,7 +118,7 @@
   .map-stats div:last-child{border-right:0}
   .map-stats .n{font-family:var(--font-mono);font-size:22px;color:var(--text);font-variant-numeric:tabular-nums}
   .map-stats .n small{color:var(--orange)}
-  .map-stats .l{font-size:12px;color:var(--muted);margin-top:2px}
+  .map-stats .l{font-size:13.5px;color:var(--muted);margin-top:3px}
   /* features */
   .grid{margin-top:46px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
   @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
@@ -133,13 +133,13 @@
   .feat p{margin-top:8px;color:var(--muted);font-size:14px;line-height:1.55}
   /* privacy */
   .band{border-radius:22px;padding:52px 40px;text-align:center;border:1px solid var(--hair);background:radial-gradient(600px 300px at 50% 0%,rgba(79,214,230,.09),transparent),linear-gradient(180deg,#0d1e36,#0a1626)}
-  .band h2{font-family:var(--font-display);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em}
+  .band h2{font-family:var(--font-display);font-weight:600;font-size:clamp(26px,4vw,40px);letter-spacing:0em}
   .band p{max-width:56ch;margin:16px auto 0;color:var(--muted);font-size:16.5px}
   .chips{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
   .chip{font-family:var(--font-mono);font-size:12px;color:var(--cyan);padding:8px 14px;border-radius:999px;border:1px solid var(--hair-2);background:var(--cyan-soft)}
   /* closing */
   .closing{text-align:center;padding:30px 0 8px}
-  .closing h2{font-family:var(--font-display);font-weight:700;font-size:clamp(34px,6vw,58px);letter-spacing:-.025em;line-height:1.04;text-wrap:balance}
+  .closing h2{font-family:var(--font-display);font-weight:700;font-size:clamp(34px,6vw,58px);letter-spacing:0em;line-height:1.04;text-wrap:balance}
   .closing p{color:var(--muted);margin-top:16px;font-size:17px}
   .dl-meta{margin-top:14px;font-family:var(--font-mono);font-size:12.5px;color:var(--faint)}
   footer{margin-top:88px;border-top:1px solid var(--hair);background:linear-gradient(180deg,transparent,rgba(5,11,22,.7))}
@@ -334,33 +334,39 @@
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
   document.querySelectorAll('.rise').forEach(el=>io.observe(el));
 
-  // generative dot world-map + dive-site pins + trip arcs
+  // generative dot world-map (simplified continent outlines) + dive-site pins + trip arcs
   (function(){
     const svg=document.getElementById('worldmap'); if(!svg) return;
-    const W=1000,H=470;
-    // rough continent regions (equirectangular ellipses: cx,cy,rx,ry)
-    const land=[[205,150,92,74],[270,300,58,92],[300,360,26,34],[498,120,66,52],[500,86,34,22],[535,255,70,92],[690,150,150,92],[772,272,52,32],[812,258,26,20],[846,332,52,30]];
-    const inLand=(x,y)=>land.some(([cx,cy,rx,ry])=>((x-cx)**2/(rx*rx)+(y-cy)**2/(ry*ry))<=1);
+    const W=1000,H=470, X=lon=>(lon+180)*(W/360), Y=lat=>(90-lat)*(H/180);
+    // simplified continents as [lon,lat] polygons (equirectangular)
+    const shapes=[
+      [[-165,60],[-140,68],[-100,70],[-62,68],[-52,48],[-70,45],[-78,26],[-88,15],[-100,17],[-108,24],[-124,40],[-140,50],[-165,55]],
+      [[-52,78],[-22,80],[-18,68],[-45,60],[-52,68]],
+      [[-80,10],[-62,10],[-50,-4],[-42,-22],[-56,-50],[-70,-52],[-72,-30],[-80,-8]],
+      [[-10,43],[-2,52],[12,58],[28,60],[40,50],[28,42],[10,38],[-2,36],[-10,38]],
+      [[-17,14],[8,18],[32,32],[43,11],[51,12],[42,-2],[35,-18],[22,-35],[16,-34],[13,-20],[9,2],[-8,5],[-17,10]],
+      [[40,45],[70,48],[100,52],[130,52],[160,62],[178,66],[178,52],[150,42],[135,32],[122,10],[105,8],[95,20],[82,8],[72,20],[58,25],[45,38]],
+      [[95,6],[122,4],[142,-1],[150,-9],[122,-10],[100,-6]],
+      [[114,-19],[136,-12],[147,-17],[153,-31],[140,-39],[118,-35],[113,-24]],
+      [[168,-38],[176,-42],[173,-47],[166,-44]]
+    ].map(p=>p.map(([lo,la])=>[X(lo),Y(la)]));
+    const inPoly=(x,y,p)=>{let c=false;for(let i=0,j=p.length-1;i<p.length;j=i++){const[xi,yi]=p[i],[xj,yj]=p[j];if(((yi>y)!==(yj>y))&&(x<(xj-xi)*(y-yi)/(yj-yi)+xi))c=!c;}return c;};
+    const inLand=(x,y)=>shapes.some(p=>inPoly(x,y,p));
     let s='';
-    // graticule
     for(let x=0;x<=W;x+=W/12) s+=`<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="rgba(147,164,184,.05)"/>`;
     for(let y=0;y<=H;y+=H/6) s+=`<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="rgba(147,164,184,.05)"/>`;
     s+=`<line x1="0" y1="${H/2}" x2="${W}" y2="${H/2}" stroke="rgba(79,214,230,.12)" stroke-dasharray="2 6"/>`;
-    // land dots
-    const step=14;
-    for(let y=step;y<H;y+=step)for(let x=step;x<W;x+=step){ if(inLand(x,y)) s+=`<circle cx="${x}" cy="${y}" r="1.7" fill="#2f5a7d"/>`; }
-    // trip arcs
-    const arcs=[[548,206,620,258],[620,258,778,286],[778,286,800,246],[238,246,214,296],[548,206,690,150]];
-    arcs.forEach(([x1,y1,x2,y2])=>{const mx=(x1+x2)/2,my=Math.min(y1,y2)-42;
-      s+=`<path d="M${x1} ${y1} Q ${mx} ${my} ${x2} ${y2}" fill="none" stroke="#F78B34" stroke-width="1" opacity=".26" stroke-dasharray="3 5"/>`;});
-    // pins: x,y,label,dives(size)
-    const pins=[[548,206,'Red Sea',9,'end'],[620,258,'Maldives',6,'start'],[778,286,'Raja Ampat',10,'start'],[800,246,'Palau',7,'start'],[846,320,'Great Barrier Reef',7,'start'],[238,246,'Cozumel',6,'end'],[214,296,'Galápagos',6,'end'],[792,236,'Philippines',6,'start']];
-    pins.forEach(([x,y,l,sz,anchor])=>{
-      s+=`<circle cx="${x}" cy="${y}" r="${sz+7}" fill="#F78B34" opacity=".13"/>`;
-      s+=`<circle cx="${x}" cy="${y}" r="${sz/2+2}" fill="#F78B34"/>`;
-      s+=`<circle cx="${x}" cy="${y}" r="${sz/2+2}" fill="none" stroke="#ffd9b0" stroke-width="1" opacity=".55"/>`;
-      const tx=anchor==='end'?x-10:x+11;
-      s+=`<text class="maplabel" x="${tx}" y="${y+4}" text-anchor="${anchor}">${l}</text>`;
+    const step=12;
+    for(let y=step/2;y<H;y+=step)for(let x=step/2;x<W;x+=step){ if(inLand(x,y)) s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="1.8" fill="#2f5a7d"/>`; }
+    const P=[[35,22,'Red Sea',9,'end'],[73,3,'Maldives',6,'end'],[130,-1,'Raja Ampat',10,'end'],[134,7,'Palau',7,'start'],[147,-18,'Great Barrier Reef',7,'end'],[-87,20,'Cozumel',6,'start'],[-91,0,'Galápagos',6,'start'],[122,13,'Philippines',6,'start']].map(([lo,la,l,sz,a])=>({x:X(lo),y:Y(la),l,sz,a}));
+    [[0,1],[1,2],[2,3],[3,7],[5,6]].forEach(([a,b])=>{const p=P[a],q=P[b],mx=(p.x+q.x)/2,my=Math.min(p.y,q.y)-42;
+      s+=`<path d="M${p.x.toFixed(0)} ${p.y.toFixed(0)} Q ${mx.toFixed(0)} ${my.toFixed(0)} ${q.x.toFixed(0)} ${q.y.toFixed(0)}" fill="none" stroke="#F78B34" stroke-width="1" opacity=".24" stroke-dasharray="3 5"/>`;});
+    P.forEach(({x,y,l,sz,a})=>{
+      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${sz+7}" fill="#F78B34" opacity=".13"/>`;
+      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(sz/2+2).toFixed(1)}" fill="#F78B34"/>`;
+      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(sz/2+2).toFixed(1)}" fill="none" stroke="#ffd9b0" stroke-width="1" opacity=".55"/>`;
+      const tx=a==='end'?x-10:x+11;
+      s+=`<text class="maplabel" x="${tx.toFixed(0)}" y="${(y+4).toFixed(0)}" text-anchor="${a}">${l}</text>`;
     });
     svg.innerHTML=s;
   })();
