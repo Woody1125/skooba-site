@@ -96,7 +96,7 @@
   .spot p{color:var(--muted);margin-top:15px;font-size:16px}
   /* vendor lock-in diagram */
   .vendors{display:flex;flex-direction:column;gap:12px;align-items:stretch}
-  .vchip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:12px;border:1px solid var(--hair-2);background:rgba(255,255,255,.02);font-family:var(--font-mono);font-size:13.5px;color:var(--muted)}
+  .vchip{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 18px;border-radius:12px;border:1px solid var(--hair-2);background:rgba(255,255,255,.02);font-family:var(--font-mono);font-size:13.5px;color:var(--muted)}
   .vchip .arrow{color:var(--faint);font-size:15px}
   .vconverge{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px;padding:16px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft);font-family:var(--font-display);font-weight:600;color:var(--orange-2)}
   .vconverge svg{width:20px;height:20px}
@@ -104,7 +104,7 @@
   .syncflow{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
   .syncflow .device-phone-static{position:relative;right:auto;bottom:auto;width:34%;min-width:150px;max-width:220px;border-radius:24px;overflow:hidden;border:2px solid var(--hair-2);box-shadow:0 30px 60px -20px rgba(0,0,0,.7);background:#091628}
   .syncflow .device{width:52%;min-width:260px}
-  .syncarrow{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--cyan);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+  .syncarrow{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--cyan);font-family:var(--font-mono);font-size:12px;letter-spacing:.02em}
   .syncarrow svg{width:26px;height:26px}
   @media(max-width:760px){.syncflow{flex-direction:column}.syncflow .device,.syncflow .device-phone-static{width:80%;max-width:340px}}
   /* milestone panel */
@@ -123,8 +123,7 @@
   /* world map */
   .mapwrap{margin-top:44px;border-radius:22px;border:1px solid var(--hair);overflow:hidden;position:relative;
     background:radial-gradient(900px 420px at 50% 40%,rgba(79,214,230,.06),transparent 70%),linear-gradient(180deg,#0b1c30,#081524)}
-  .mapwrap svg{display:block;width:100%;height:auto}
-  .maplabel{font-family:var(--font-mono);font-size:11px;fill:var(--muted)}
+  .mapwrap img{display:block;width:100%;height:auto}
   .map-stats{display:flex;gap:0;justify-content:center;flex-wrap:wrap;margin-top:22px;border:1px solid var(--hair);border-radius:14px;overflow:hidden;background:rgba(255,255,255,.015)}
   .map-stats div{padding:15px 26px;border-right:1px solid var(--hair);text-align:center;flex:1 1 auto}
   .map-stats div:last-child{border-right:0}
@@ -197,7 +196,6 @@
       <p class="lede anim a3">A native logbook that captures every dive with real precision — on your Mac and in your pocket — then gives your memories back to you: the milestones, the places, the firsts that made each one matter.</p>
       <div class="hero-meta anim a4">
         <span><b>Mac</b>&nbsp;&amp;&nbsp;<b>iPhone</b></span><span class="dot"></span>
-        <span>Signed&nbsp;&amp;&nbsp;Notarized</span><span class="dot"></span>
         <span><b>English</b>&nbsp;·&nbsp;<b>繁體中文</b></span>
       </div>
       <div class="cta-row anim a5">
@@ -259,9 +257,9 @@
       <p>Surface, and it's already half-logged. Pull the dive off your computer on your phone, drop a pin with your phone's own GPS even when your dive computer has none, jot down what you saw while it's fresh, and snap a photo. Get home, open Skooba on your Mac, and that dive is already there — synced through your own iCloud. Round it out at a proper desk: the marine life you spotted, the gear you dove in, who was down there with you, and the story worth remembering. Change anything, and it syncs straight back to your phone.</p>
     </div>
     <div class="syncflow rise d1" style="margin-top:40px">
-      <div class="device-phone-static"><img class="device-img" src="img/sync-mobile.webp" alt="A dive open on Skooba for iPhone, with the dive computer, marine life sightings, a photo and a tag already logged" /></div>
+      <div class="device-phone-static"><img class="device-img" src="img/sync-mobile.webp" alt="A dive open on Skooba for iPhone, showing gas usage, gear logged for the dive, and photos from underwater" /></div>
       <div class="syncarrow">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5"/><path d="M4 9a8 8 0 0113.6-4.9M20 15a8 8 0 01-13.6 4.9"/></svg>
+        <svg viewBox="0 0 256 256" aria-hidden="true"><polyline points="168 96 216 96 216 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M216,96,187.72,67.72A88,88,0,0,0,64,67" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="88 160 40 160 40 208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40,160l28.28,28.28A88,88,0,0,0,192,189" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
         Synced via iCloud
       </div>
       <div class="device"><div class="device-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="device-title">Notes — Skooba for Mac</span></div><img class="device-img" src="img/sync-desktop.webp" alt="The same dive in Skooba for Mac's Notes tab, with a journal entry about four hammerhead sharks seen on the dive" /></div>
@@ -298,7 +296,7 @@
       <h2>Everywhere you've been below the surface.</h2>
       <p>Every site you've ever dived, pinned on one map — the same map whether you're on your Mac or your phone. Watch your world fill in — reef by reef, country by country — and relive the trips behind it.</p>
     </div>
-    <div class="mapwrap rise d1"><svg id="worldmap" viewBox="0 0 1000 470" role="img" aria-label="A world map of dive sites"></svg></div>
+    <div class="mapwrap rise d1"><img src="img/worldmap.webp" alt="A world map with pins marking every country the owner has dived in, sized by number of dives" /></div>
     <div class="map-stats rise d2">
       <div><div class="n">11</div><div class="l">countries</div></div>
       <div><div class="n">336</div><div class="l">dive sites</div></div>
@@ -323,6 +321,7 @@
       <div class="feat rise d1"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div><h3>Sites, life &amp; gear</h3><p>Catalog your dive sites, the marine life you saw, your kit and your certifications — all cross-linked.</p></div>
       <div class="feat rise d2"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/><circle cx="8" cy="5" r="1.6"/><circle cx="15" cy="12" r="1.6"/><circle cx="11" cy="19" r="1.6"/></svg></div><h3>Statistics that surprise</h3><p>Slice your diving any way you like — depth, gas, buddies, seasons — and spot the patterns of a lifetime.</p></div>
       <div class="feat rise d3"><div class="ficon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>Backup &amp; restore</h3><p>One file holds your entire logbook — dives, photos, everything. Move it between your own Macs any time.</p></div>
+      <div class="feat rise d1"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 15V3m0 0l-4 4m4-4l4 4"/><path d="M4 13v6a2 2 0 002 2h12a2 2 0 002-2v-6"/></svg></div><h3>Ready for Instagram</h3><p>Pair a dive's stats with your favorite photo and share the moment straight to Instagram — no exporting, no extra apps.</p></div>
     </div>
   </div>
 </section>
@@ -353,7 +352,7 @@
     <div class="cta-row rise d2" style="justify-content:center;margin-top:24px">
       <span class="soon-tag"><span class="pulse"></span> Currently in Beta</span>
     </div>
-    <div class="dl-meta rise d3">Apple Silicon · macOS 12+ · iOS 16+ · signed &amp; notarized</div>
+    <div class="dl-meta rise d3">Apple Silicon · macOS 15+ · iOS 16+</div>
   </div>
 </section>
 
@@ -372,30 +371,6 @@
   const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
   document.querySelectorAll('.rise').forEach(el=>io.observe(el));
 
-  // generative dot world-map (real low-res land mask) + dive-site pins + trip arcs
-  (function(){
-    const svg=document.getElementById('worldmap'); if(!svg) return;
-    const W=1000,H=470,COLS=72, X=lon=>(lon+180)*(W/360), Y=lat=>(90-lat)*(H/180);
-    const cx=c=>((c+0.5)/COLS)*W, ry=r=>Y(79.5-5*r);
-    // land cells [row,colStart,colEnd] on a 72-col×28-row equirectangular grid (hand-traced world)
-    const LAND=[[1,12,18],[1,30,34],[2,2,6],[2,8,20],[2,30,33],[2,46,64],[3,3,20],[3,31,33],[3,38,66],[4,4,20],[4,36,68],[5,4,21],[5,34,34],[5,36,68],[6,5,21],[6,34,44],[6,45,66],[6,69,70],[7,6,21],[7,34,46],[7,47,64],[8,8,21],[8,34,46],[8,47,63],[9,9,21],[9,34,49],[9,50,52],[9,54,62],[10,11,21],[10,34,47],[10,49,53],[10,54,61],[11,13,20],[11,34,47],[11,49,53],[11,55,61],[12,14,19],[12,34,46],[12,50,53],[12,55,58],[12,60,60],[13,16,19],[13,33,47],[13,50,52],[13,55,58],[13,60,61],[14,17,19],[14,21,25],[14,33,47],[14,51,51],[14,55,58],[14,60,61],[15,21,26],[15,34,47],[15,54,57],[15,58,59],[15,60,60],[16,22,28],[16,35,47],[16,54,56],[16,58,61],[16,63,66],[17,22,29],[17,37,47],[17,55,58],[17,60,61],[17,63,66],[18,22,29],[18,38,46],[18,56,60],[18,63,66],[19,23,29],[19,38,45],[19,47,48],[19,60,67],[20,23,28],[20,38,44],[20,47,48],[20,59,68],[21,24,28],[21,39,44],[21,59,68],[22,24,27],[22,40,43],[22,59,67],[23,24,26],[23,40,42],[23,60,66],[24,24,26],[24,64,65],[24,69,71],[25,24,25],[25,69,70],[26,24,25]];
-    let s='';
-    for(let x=0;x<=W;x+=W/12) s+=`<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="rgba(147,164,184,.05)"/>`;
-    for(let y=0;y<=H;y+=H/6) s+=`<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="rgba(147,164,184,.05)"/>`;
-    s+=`<line x1="0" y1="${H/2}" x2="${W}" y2="${H/2}" stroke="rgba(79,214,230,.12)" stroke-dasharray="2 6"/>`;
-    LAND.forEach(([r,a,b])=>{const y=ry(r).toFixed(0);for(let c=a;c<=b;c++) s+=`<circle cx="${cx(c).toFixed(0)}" cy="${y}" r="2" fill="#2f5a7d"/>`;});
-    const P=[[35,22,'Red Sea',9,'end'],[73,3,'Maldives',6,'end'],[130,-1,'Raja Ampat',10,'end'],[134,7,'Palau',7,'start'],[147,-18,'Great Barrier Reef',7,'end'],[-87,20,'Cozumel',6,'start'],[-91,0,'Galápagos',6,'start'],[122,13,'Philippines',6,'start']].map(([lo,la,l,sz,a])=>({x:X(lo),y:Y(la),l,sz,a}));
-    [[0,1],[1,2],[2,3],[3,7],[5,6]].forEach(([a,b])=>{const p=P[a],q=P[b],mx=(p.x+q.x)/2,my=Math.min(p.y,q.y)-42;
-      s+=`<path d="M${p.x.toFixed(0)} ${p.y.toFixed(0)} Q ${mx.toFixed(0)} ${my.toFixed(0)} ${q.x.toFixed(0)} ${q.y.toFixed(0)}" fill="none" stroke="#F78B34" stroke-width="1" opacity=".24" stroke-dasharray="3 5"/>`;});
-    P.forEach(({x,y,l,sz,a})=>{
-      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${sz+7}" fill="#F78B34" opacity=".13"/>`;
-      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(sz/2+2).toFixed(1)}" fill="#F78B34"/>`;
-      s+=`<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${(sz/2+2).toFixed(1)}" fill="none" stroke="#ffd9b0" stroke-width="1" opacity=".55"/>`;
-      const tx=a==='end'?x-10:x+11;
-      s+=`<text class="maplabel" x="${tx.toFixed(0)}" y="${(y+4).toFixed(0)}" text-anchor="${a}">${l}</text>`;
-    });
-    svg.innerHTML=s;
-  })();
 </script>
 </body>
 </html>
