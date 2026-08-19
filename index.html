@@ -94,6 +94,12 @@
   @media(max-width:860px){.spot,.spot.rev{grid-template-columns:1fr;gap:26px;padding:26px}}
   .spot h2{font-family:var(--font-display);font-weight:600;font-size:clamp(28px,4vw,42px);letter-spacing:0em;margin-top:14px;line-height:1.08;text-wrap:balance}
   .spot p{color:var(--muted);margin-top:15px;font-size:16px}
+  /* vendor lock-in diagram */
+  .vendors{display:flex;flex-direction:column;gap:12px;align-items:stretch}
+  .vchip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:12px;border:1px solid var(--hair-2);background:rgba(255,255,255,.02);font-family:var(--font-mono);font-size:13.5px;color:var(--muted)}
+  .vchip .arrow{color:var(--faint);font-size:15px}
+  .vconverge{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px;padding:16px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft);font-family:var(--font-display);font-weight:600;color:var(--orange-2)}
+  .vconverge svg{width:20px;height:20px}
   /* milestone panel */
   .mpanel{border-radius:18px;border:1px solid var(--hair-2);overflow:hidden;background:linear-gradient(180deg,#0c1d33,#091628);box-shadow:0 30px 70px -32px rgba(0,0,0,.7)}
   .mhead{padding:14px 18px;border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.16)}
@@ -165,6 +171,7 @@
       Skooba
     </a>
     <nav class="nav-links">
+      <a href="#nolockin">No lock-in</a>
       <a href="#memories">Memories</a>
       <a href="#footprint">Footprint</a>
       <a href="#features">Features</a>
@@ -211,6 +218,29 @@
     <div class="stat rise d3"><div class="n">336</div><div class="l">dive sites</div></div>
   </div>
 </div>
+
+<!-- ===== NO LOCK-IN ===== -->
+<section class="blk" id="nolockin" style="padding-top:8px">
+  <div class="wrap">
+    <div class="spot rise">
+      <div>
+        <span class="eyebrow">No lock-in</span>
+        <h2>Switch computers. Keep every dive.</h2>
+        <p>Garmin logs your dives into its own Dive app. Oceanic+ keeps them inside Apple Watch. Shearwater ties them to Shearwater Cloud. Move to a different computer and your history usually stays behind, trapped in an app you don't use anymore.</p>
+        <p style="color:var(--faint);font-size:14px;margin-top:14px">Skooba imports from all three — over Bluetooth or straight from the export file — so years of diving follow you, no matter what's on your wrist next.</p>
+      </div>
+      <div class="vendors">
+        <div class="vchip"><span>Garmin Dive App</span><span class="arrow">↘</span></div>
+        <div class="vchip"><span>Oceanic+ (Apple Watch Ultra)</span><span class="arrow">↘</span></div>
+        <div class="vchip"><span>Shearwater Cloud</span><span class="arrow">↘</span></div>
+        <div class="vconverge">
+          <svg viewBox="0 0 1024 1024" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M185,613 a226,226 0 1,0 452,0 a226,226 0 1,0 -452,0 Z M455,377 a192,192 0 1,0 384,0 a192,192 0 1,0 -384,0 Z"/></svg>
+          One Skooba logbook
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ===== MEMORIES (the differentiator) ===== -->
 <section class="blk" id="memories">
