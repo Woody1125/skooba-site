@@ -97,6 +97,7 @@
   /* vendor lock-in diagram */
   .vendors{display:flex;flex-direction:column;gap:12px;align-items:stretch}
   .vchip{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 18px;border-radius:12px;border:1px solid var(--hair-2);background:rgba(255,255,255,.02);font-family:var(--font-mono);font-size:13.5px;color:var(--muted)}
+  @media(max-width:400px){.vchip{font-size:12px;padding:14px 12px;gap:8px}}
   .vchip .arrow{color:var(--faint);font-size:15px}
   .vconverge{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px;padding:16px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft);font-family:var(--font-display);font-weight:600;color:var(--orange-2)}
   .vconverge svg{width:20px;height:20px}
@@ -237,7 +238,7 @@
       </div>
       <div class="vendors">
         <div class="vchip"><span>Garmin Dive App</span><span class="arrow" aria-hidden="true">↘</span></div>
-        <div class="vchip"><span>Oceanic+ (Apple Watch Ultra)</span><span class="arrow" aria-hidden="true">↘</span></div>
+        <div class="vchip"><span>Oceanic+ (Apple Watch)</span><span class="arrow" aria-hidden="true">↘</span></div>
         <div class="vchip"><span>Shearwater Cloud</span><span class="arrow" aria-hidden="true">↘</span></div>
         <div class="vconverge">
           <svg viewBox="0 0 1024 1024" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M185,613 a226,226 0 1,0 452,0 a226,226 0 1,0 -452,0 Z M455,377 a192,192 0 1,0 384,0 a192,192 0 1,0 -384,0 Z"/></svg>
