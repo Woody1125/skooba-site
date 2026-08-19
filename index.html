@@ -100,6 +100,13 @@
   .vchip .arrow{color:var(--faint);font-size:15px}
   .vconverge{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px;padding:16px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft);font-family:var(--font-display);font-weight:600;color:var(--orange-2)}
   .vconverge svg{width:20px;height:20px}
+  /* mobile-to-desktop sync flow */
+  .syncflow{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap}
+  .syncflow .device-phone-static{position:relative;right:auto;bottom:auto;width:34%;min-width:150px;max-width:220px;border-radius:24px;overflow:hidden;border:2px solid var(--hair-2);box-shadow:0 30px 60px -20px rgba(0,0,0,.7);background:#091628}
+  .syncflow .device{width:52%;min-width:260px}
+  .syncarrow{display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--cyan);font-family:var(--font-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+  .syncarrow svg{width:26px;height:26px}
+  @media(max-width:760px){.syncflow{flex-direction:column}.syncarrow{transform:rotate(90deg)}.syncflow .device,.syncflow .device-phone-static{width:80%;max-width:340px}}
   /* milestone panel */
   .mpanel{border-radius:18px;border:1px solid var(--hair-2);overflow:hidden;background:linear-gradient(180deg,#0c1d33,#091628);box-shadow:0 30px 70px -32px rgba(0,0,0,.7)}
   .mhead{padding:14px 18px;border-bottom:1px solid var(--hair);display:flex;align-items:center;justify-content:space-between;background:rgba(0,0,0,.16)}
@@ -172,6 +179,7 @@
     </a>
     <nav class="nav-links">
       <a href="#nolockin">No lock-in</a>
+      <a href="#sync">Sync</a>
       <a href="#memories">Memories</a>
       <a href="#footprint">Footprint</a>
       <a href="#features">Features</a>
@@ -238,6 +246,25 @@
           One Skooba logbook
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CAPTURE + SYNC ===== -->
+<section class="blk" id="sync" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sec-head center rise">
+      <span class="eyebrow">One logbook, two devices</span>
+      <h2>Log it on the dive. Finish it at your desk.</h2>
+      <p>Surface, and it's already half-logged. Pull the dive off your computer on your phone, drop a pin with your phone's own GPS even when your dive computer has none, jot down what you saw while it's fresh, and snap a photo. Get home, open Skooba on your Mac, and that dive is already there — synced through your own iCloud. Round it out at a proper desk: the marine life you spotted, the gear you dove in, who was down there with you, and the story worth remembering. Change anything, and it syncs straight back to your phone.</p>
+    </div>
+    <div class="syncflow rise d1" style="margin-top:40px">
+      <div class="device-phone-static"><img class="device-img" src="img/sync-mobile.webp" alt="A dive open on Skooba for iPhone, with the dive computer, marine life sightings, a photo and a tag already logged" /></div>
+      <div class="syncarrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v5h5M20 20v-5h-5"/><path d="M4 9a8 8 0 0113.6-4.9M20 15a8 8 0 01-13.6 4.9"/></svg>
+        Synced via iCloud
+      </div>
+      <div class="device"><div class="device-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="device-title">Notes — Skooba for Mac</span></div><img class="device-img" src="img/sync-desktop.webp" alt="The same dive in Skooba for Mac's Notes tab, with a journal entry about four hammerhead sharks seen on the dive" /></div>
     </div>
   </div>
 </section>
