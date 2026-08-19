@@ -67,16 +67,14 @@
     padding:13px 20px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft)}
   .soon-tag .pulse{width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 0 rgba(247,139,52,.6);animation:pulse 2.2s infinite}
   @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(247,139,52,.55)}70%{box-shadow:0 0 0 9px rgba(247,139,52,0)}100%{box-shadow:0 0 0 0 rgba(247,139,52,0)}}
+  .device-stack{position:relative}
   .device{position:relative;border-radius:20px;overflow:hidden;background:linear-gradient(180deg,#0c1d33,#091628);border:1px solid var(--hair-2);box-shadow:0 40px 90px -30px rgba(0,0,0,.75),inset 0 1px 0 rgba(255,255,255,.05)}
   .device-bar{display:flex;align-items:center;gap:7px;padding:12px 15px;border-bottom:1px solid var(--hair);background:rgba(0,0,0,.18)}
   .tl{width:11px;height:11px;border-radius:50%}.tl.r{background:#ff5f57}.tl.y{background:#febc2e}.tl.g{background:#28c840}
   .device-title{margin-left:8px;font-family:var(--font-mono);font-size:11.5px;color:var(--faint);letter-spacing:.04em}
-  .chart{position:relative;padding:8px 0 0}.chart svg{display:block;width:100%;height:auto}
-  .readout{display:flex;flex-wrap:wrap;border-top:1px solid var(--hair);background:rgba(0,0,0,.16)}
-  .ro{flex:1 1 25%;padding:11px 14px;border-right:1px solid var(--hair)}.ro:last-child{border-right:0}
-  .ro .k{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint)}
-  .ro .v{font-family:var(--font-mono);font-size:17px;font-weight:500;margin-top:3px;font-variant-numeric:tabular-nums}
-  .ro .v.o{color:var(--orange-2)}.ro .v.c{color:var(--cyan)}
+  .device-img{display:block;width:100%;height:auto}
+  .device-phone{position:absolute;right:-5%;bottom:-9%;width:28%;min-width:118px;border-radius:26px;overflow:hidden;border:2px solid var(--hair-2);box-shadow:0 30px 60px -20px rgba(0,0,0,.8);background:#091628}
+  @media(max-width:900px){.device-phone{width:24%;right:1%;bottom:-6%}}
   .strip{margin-top:24px;border-top:1px solid var(--hair);border-bottom:1px solid var(--hair);background:linear-gradient(180deg,rgba(79,214,230,.03),transparent)}
   .strip-in{max-width:var(--maxw);margin:0 auto;padding:22px 28px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
   @media(max-width:640px){.strip-in{grid-template-columns:repeat(2,1fr);gap:22px 16px}}
@@ -152,10 +150,8 @@
   @keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
   .hero .anim{opacity:0;animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
   .hero .a1{animation-delay:.05s}.hero .a2{animation-delay:.16s}.hero .a3{animation-delay:.27s}.hero .a4{animation-delay:.38s}.hero .a5{animation-delay:.5s}
-  .device.load{opacity:0;animation:up 1s cubic-bezier(.2,.7,.2,1) .34s forwards}
-  .trace{stroke-dasharray:2600;stroke-dashoffset:2600;animation:draw 2.4s cubic-bezier(.5,.1,.2,1) .5s forwards}
-  @keyframes draw{to{stroke-dashoffset:0}}
-  @media(prefers-reduced-motion:reduce){*{animation:none!important}.rise{opacity:1;transform:none}.trace{stroke-dashoffset:0}html{scroll-behavior:auto}}
+  .device-stack.load{opacity:0;animation:up 1s cubic-bezier(.2,.7,.2,1) .34s forwards}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}.rise{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -180,43 +176,27 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow anim a1">The dive log for macOS</span>
+      <span class="eyebrow anim a1">The dive log for Mac &amp; iPhone</span>
       <h1 class="anim a2">Every dive,<br><span class="accent">worth remembering.</span></h1>
-      <p class="lede anim a3">A native Mac logbook that captures every dive with real precision — then gives your memories back to you: the milestones, the places, the firsts that made each one matter.</p>
+      <p class="lede anim a3">A native logbook that captures every dive with real precision — on your Mac and in your pocket — then gives your memories back to you: the milestones, the places, the firsts that made each one matter.</p>
       <div class="hero-meta anim a4">
-        <span><b>Apple&nbsp;Silicon</b></span><span class="dot"></span>
+        <span><b>Mac</b>&nbsp;&amp;&nbsp;<b>iPhone</b></span><span class="dot"></span>
         <span>Signed&nbsp;&amp;&nbsp;Notarized</span><span class="dot"></span>
         <span><b>English</b>&nbsp;·&nbsp;<b>繁體中文</b></span>
       </div>
       <div class="cta-row anim a5">
-        <span class="soon-tag"><span class="pulse"></span> Coming soon to macOS</span>
+        <span class="soon-tag"><span class="pulse"></span> Currently in Beta</span>
         <a class="btn btn-ghost" href="#memories">See what makes it different</a>
       </div>
     </div>
 
-    <div class="device load">
-      <div class="device-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="device-title">Blue Hole · 42 min · 28.4 m</span></div>
-      <div class="chart">
-        <svg viewBox="0 0 560 250" preserveAspectRatio="none" aria-label="A dive depth profile">
-          <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4FD6E6" stop-opacity=".22"/><stop offset="1" stop-color="#4FD6E6" stop-opacity="0"/></linearGradient></defs>
-          <g font-family="ui-monospace,Menlo,monospace" font-size="9" fill="#5f7690">
-            <line x1="34" y1="40" x2="548" y2="40" stroke="rgba(147,164,184,.10)"/><text x="6" y="43">5m</text>
-            <line x1="34" y1="90" x2="548" y2="90" stroke="rgba(147,164,184,.10)"/><text x="4" y="93">15m</text>
-            <line x1="34" y1="140" x2="548" y2="140" stroke="rgba(147,164,184,.10)"/><text x="4" y="143">25m</text>
-            <line x1="34" y1="190" x2="548" y2="190" stroke="rgba(147,164,184,.10)"/><text x="4" y="193">35m</text>
-          </g>
-          <path d="M40 26 L70 58 L96 150 L120 176 L150 150 L182 176 L214 150 L246 182 L286 150 L330 176 L372 120 L410 132 L440 96 L470 100 L470 236 L40 236 Z" fill="url(#fill)"/>
-          <path class="trace" d="M40 26 L70 58 L96 150 L120 176 L150 150 L182 176 L214 150 L246 182 L286 150 L330 176 L372 120 L410 132 L440 96 L470 100" fill="none" stroke="#4FD6E6" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
-          <path d="M330 176 L372 120" fill="none" stroke="#F5B338" stroke-width="2.8" stroke-linecap="round"/>
-          <path d="M410 132 L440 96" fill="none" stroke="#ff5b6b" stroke-width="2.8" stroke-linecap="round"/>
-          <circle cx="440" cy="96" r="3.6" fill="#fff"/><circle cx="440" cy="96" r="7" fill="none" stroke="#ff5b6b" stroke-width="1.4"/>
-        </svg>
+    <div class="device-stack load">
+      <div class="device">
+        <div class="device-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span><span class="device-title">Dives — Skooba for Mac</span></div>
+        <img class="device-img" src="img/hero-desktop.webp" alt="Skooba's dive list on macOS, showing a real logbook of dives with a depth profile chart" />
       </div>
-      <div class="readout">
-        <div class="ro"><div class="k">Depth</div><div class="v c">28.4 m</div></div>
-        <div class="ro"><div class="k">Time</div><div class="v">42:10</div></div>
-        <div class="ro"><div class="k">Temp</div><div class="v">27.0°</div></div>
-        <div class="ro"><div class="k">Ascent</div><div class="v o">↑10.8</div></div>
+      <div class="device-phone">
+        <img class="device-img" src="img/hero-mobile.webp" alt="Skooba's Overview screen on iPhone, showing dive stats and a map of dive sites" />
       </div>
     </div>
   </div>
