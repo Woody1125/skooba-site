@@ -98,7 +98,6 @@
   .vendors{display:flex;flex-direction:column;gap:12px;align-items:stretch}
   .vchip{display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 18px;border-radius:12px;border:1px solid var(--hair-2);background:rgba(255,255,255,.02);font-family:var(--font-mono);font-size:13.5px;color:var(--muted)}
   @media(max-width:400px){.vchip{font-size:12px;padding:14px 12px;gap:8px}}
-  .vchip .arrow{color:var(--faint);font-size:15px}
   .vconverge{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:6px;padding:16px;border-radius:12px;border:1px solid var(--orange-line);background:var(--orange-soft);font-family:var(--font-display);font-weight:600;color:var(--orange-2)}
   .vconverge svg{width:20px;height:20px}
   /* mobile-to-desktop sync flow */
@@ -202,11 +201,11 @@
       <h1 class="anim a2">Every dive,<br><span class="accent">worth remembering.</span></h1>
       <p class="lede anim a3">A native logbook that captures every dive with real precision — on your Mac and in your pocket — then gives your memories back to you: the milestones, the places, the firsts that made each one matter.</p>
       <div class="hero-meta anim a4">
-        <span><b>Mac</b>&nbsp;&amp;&nbsp;<b>iPhone</b></span><span class="dot"></span>
+        <span><b>Mac</b>,&nbsp;<b>iPhone</b>&nbsp;&amp;&nbsp;<b>iPad</b></span><span class="dot"></span>
         <span><b>English</b>&nbsp;·&nbsp;<b>繁體中文</b></span>
       </div>
       <div class="cta-row anim a5">
-        <span class="soon-tag"><span class="pulse"></span> Currently in Beta</span>
+        <span class="soon-tag"><span class="pulse"></span> Available to Go Diving Club members</span>
         <a class="btn btn-ghost" href="#memories">See what makes it different</a>
       </div>
     </div>
@@ -239,13 +238,14 @@
       <div>
         <span class="eyebrow">No lock-in</span>
         <h2>Switch computers. Keep every dive.</h2>
-        <p>Garmin logs your dives into its own Dive app. Oceanic+ keeps them inside Apple Watch. Shearwater ties them to Shearwater Cloud. Move to a different computer and your history usually stays behind, trapped in an app you don't use anymore.</p>
-        <p style="color:var(--faint);font-size:14px;margin-top:14px">Skooba imports from all three — over Bluetooth or straight from the export file — so years of diving follow you, no matter what's on your wrist next.</p>
+        <p>Most dive computers keep your dives in their own app — Garmin in its Dive app, Oceanic+ inside Apple Watch, Shearwater in Shearwater Cloud, and more. Move to a different computer and your history usually stays behind, trapped in an app you don't use anymore.</p>
+        <p style="color:var(--faint);font-size:14px;margin-top:14px">Skooba imports UDDF, the open dive-log format, along with Garmin and Suunto FIT files. If your computer or app can export UDDF, your dives can come with you — so years of diving follow you, no matter what's on your wrist next.</p>
       </div>
       <div class="vendors">
-        <div class="vchip"><span>Garmin Dive App</span><span class="arrow" aria-hidden="true">↘</span></div>
-        <div class="vchip"><span>Oceanic+ (Apple Watch)</span><span class="arrow" aria-hidden="true">↘</span></div>
-        <div class="vchip"><span>Shearwater Cloud</span><span class="arrow" aria-hidden="true">↘</span></div>
+        <div class="vchip"><span>Garmin Dive App</span></div>
+        <div class="vchip"><span>Oceanic+ (Apple Watch)</span></div>
+        <div class="vchip"><span>Shearwater Cloud</span></div>
+        <div class="vchip"><span>Any app that exports UDDF</span></div>
         <div class="vconverge">
           <svg viewBox="0 0 1024 1024" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M185,613 a226,226 0 1,0 452,0 a226,226 0 1,0 -452,0 Z M455,377 a192,192 0 1,0 384,0 a192,192 0 1,0 -384,0 Z"/></svg>
           One Skooba logbook
@@ -323,7 +323,7 @@
     </div>
     <div class="grid">
       <div class="feat rise d1"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M7 7l10 10-5 5V2l5 5L7 17"/></svg></div><h3>Straight off your computer</h3><p>Download dives over Bluetooth from your Shearwater and more — on your Mac or right from your phone on the boat.</p></div>
-      <div class="feat rise d2"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></div><h3>Import from anywhere</h3><p>Bring your history in from MacDive, Subsurface UDDF, Garmin FIT and Oceanic+ — deduped and ready.</p></div>
+      <div class="feat rise d2"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg></div><h3>Import from anywhere</h3><p>Bring your history in from any app that exports UDDF — including Subsurface and Oceanic+ — plus MacDive and Garmin or Suunto FIT files. Deduped and ready.</p></div>
       <div class="feat rise d3"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M3 5v14h18M7 14l4-6 3 4 4-7"/></svg></div><h3>The profile, decoded</h3><p>Depth over time with ascent-rate warnings, deco, ppO₂ and temperature — the whole dive at a glance.</p></div>
       <div class="feat rise d1"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></div><h3>Sites, life &amp; gear</h3><p>Catalog your dive sites, the marine life you saw, your kit and your certifications — all cross-linked.</p></div>
       <div class="feat rise d2"><div class="ficon"><svg viewBox="0 0 24 24"><path d="M3 5h18M3 12h18M3 19h18"/><circle cx="8" cy="5" r="1.6"/><circle cx="15" cy="12" r="1.6"/><circle cx="11" cy="19" r="1.6"/></svg></div><h3>Statistics that surprise</h3><p>Slice your diving any way you like — depth, gas, buddies, seasons — and spot the patterns of a lifetime.</p></div>
@@ -355,11 +355,11 @@
   <div class="wrap closing">
     <svg viewBox="0 0 1024 1024" width="62" height="62" style="filter:drop-shadow(0 10px 30px rgba(247,139,52,.45));margin-bottom:8px" aria-hidden="true"><path fill="#F78B34" fill-rule="evenodd" d="M185,613 a226,226 0 1,0 452,0 a226,226 0 1,0 -452,0 Z M455,377 a192,192 0 1,0 384,0 a192,192 0 1,0 -384,0 Z"/></svg>
     <h2 class="rise">A logbook that<br>remembers with you.</h2>
-    <p class="rise d1">Skooba is currently in private beta, on Mac and iPhone.</p>
+    <p class="rise d1">Made for the Go Diving Club community.</p>
     <div class="cta-row rise d2" style="justify-content:center;margin-top:24px">
-      <span class="soon-tag"><span class="pulse"></span> Currently in Beta</span>
+      <span class="soon-tag"><span class="pulse"></span> Available to Go Diving Club members</span>
     </div>
-    <div class="dl-meta rise d3">Apple Silicon · macOS 15+ · iOS 16+</div>
+    <div class="dl-meta rise d3">Apple Silicon · macOS 15+ · iOS &amp; iPadOS 15+</div>
   </div>
 </section>
 
