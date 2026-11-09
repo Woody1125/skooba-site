@@ -29,7 +29,8 @@
   .back:hover{color:var(--text)}
   main{flex:1;max-width:760px;width:100%;margin:0 auto;padding:48px 24px 24px}
   h1{font-family:var(--font-display);font-weight:700;font-size:clamp(34px,6vw,48px);line-height:1.1;margin-bottom:12px}
-  h2{font-family:var(--font-display);font-weight:600;font-size:22px;margin:34px 0 10px;color:var(--text)}
+  h2{font-family:var(--font-display);font-weight:600;font-size:26px;margin:44px 0 6px;color:var(--text);padding-bottom:10px;border-bottom:1px solid var(--hair)}
+  h3{font-family:var(--font-body);font-weight:700;font-size:17.5px;margin:24px 0 6px;color:var(--text)}
   p,li{color:var(--muted);font-size:16.5px}
   p{margin-bottom:12px}
   ul{margin:0 0 12px 22px}
@@ -53,20 +54,60 @@
 <main>
   <h1>Support</h1>
   <p>Questions, a bug, or a dive computer that won't import? Email us at <a href="mailto:support@skooba.app">support@skooba.app</a>.</p>
-  <p>Please include your device (iPhone or Mac), the Skooba version, and your dive computer model if it's about a download.</p>
+  <p>Please include your device (iPhone, iPad or Mac), the Skooba version, and the diagnostic log (see how below for your device). If it's about a download, add your dive computer model.</p>
 
-  <h2>Common questions</h2>
+  <h2>iPhone &amp; iPad</h2>
 
-  <h2 style="font-size:18px;margin-top:22px">How do I get dives into Skooba?</h2>
-  <p>On iPhone, open <strong>More &rarr; Import</strong>. You can add a dive computer and download over Bluetooth, or choose a UDDF, Garmin/Suunto FIT or Suunto JSON log file under &ldquo;From Log File&rdquo;.</p>
+  <h3>How do I get dives into Skooba?</h3>
+  <p>Open <strong>More &rarr; Import</strong>. You can add a dive computer and download over Bluetooth, or choose a UDDF, Garmin/Suunto FIT or Suunto JSON log file under &ldquo;From Log File&rdquo;.</p>
 
-  <h2 style="font-size:18px;margin-top:22px">How do I sync my iPhone and Mac?</h2>
-  <p>Open <strong>More &rarr; Cloud Sync</strong> on each device and turn it on. Sync uses your own iCloud Drive, so both devices need to be signed in to the same Apple ID.</p>
+  <h3>How do I sync with my Mac?</h3>
+  <p>Open <strong>More &rarr; Cloud Sync</strong> and turn it on. Sync uses your own iCloud Drive, so both devices need to be signed in to the same Apple ID.</p>
 
-  <h2 style="font-size:18px;margin-top:22px">What is the Location Tracker?</h2>
-  <p>It is optional. Tap &ldquo;Start recording location&rdquo; when you start a dive trip and &ldquo;Stop recording&rdquo; when you finish, so Skooba can tag first-time dive sites with GPS coordinates.</p>
+  <h3>What is the Location Tracker?</h3>
+  <p>It is optional. Open <strong>More &rarr; Location Tracker</strong> and tap &ldquo;Start recording location&rdquo; when you start a dive trip, then &ldquo;Stop recording&rdquo; when you finish, so Skooba can tag first-time dive sites with GPS coordinates.</p>
 
-  <h2 style="font-size:18px;margin-top:22px">Where is my data stored?</h2>
+  <h3>My first sync is very slow, or it says it is waiting for iCloud.</h3>
+  <p>iCloud may not have downloaded all your files to this device yet. Before you sync, open the <strong>Files</strong> app &rarr; <strong>iCloud Drive</strong>, touch and hold <strong>Skooba (Do Not Modify)</strong>, and tap <strong>Keep Downloaded</strong>. Then sync again.</p>
+
+  <h3>The Trip Album shows no photos.</h3>
+  <p>The Trip Album shows the photos and videos taken on the dates of the trip, so Skooba needs access to your photo library. In the iOS <strong>Settings</strong> app, open <strong>Skooba &rarr; Photos</strong> and choose <strong>All Photos</strong>. If it is set to &ldquo;Limited Access&rdquo;, Skooba can only see the few photos you picked, so most trip photos will not appear.</p>
+
+  <h3>How do I back up my data or move to a new phone?</h3>
+  <p>Open <strong>More &rarr; Settings &rarr; Data &rarr; Create Backup</strong> to save a backup file. On the new phone, use <strong>Restore from backup</strong> in the same place. If you use Cloud Sync, you can also turn it on with the same Apple ID on the new phone to bring your dives over.</p>
+
+  <h3>How do I send a diagnostic log?</h3>
+  <p>Open <strong>More &rarr; Settings &rarr; Diagnostics &rarr; Export Diagnostic Log</strong>, then email us the file.</p>
+
+  <h2>Mac</h2>
+
+  <h3>How do I get dives into Skooba?</h3>
+  <p>Click <strong>Import</strong> in the toolbar. Under &ldquo;From Dive Computer&rdquo;, choose <strong>Bluetooth&hellip;</strong> to download from your dive computer. Under &ldquo;From Log File&rdquo;, choose a UDDF, MacDive XML, Skooba XML or Garmin/Suunto FIT file, or a whole folder of FIT files. Under &ldquo;From Cloud&rdquo;, choose <strong>Garmin Connect&hellip;</strong> to download from your Garmin account.</p>
+
+  <h3>How do I sync with my iPhone?</h3>
+  <p>Open <strong>Settings &rarr; Cloud Sync</strong> and turn it on. Sync uses your own iCloud Drive, so both devices need to be signed in to the same Apple ID.</p>
+
+  <h3>Garmin Connect says it is not accepting my sign-in.</h3>
+  <p>Garmin sometimes limits sign-in attempts. Check your Garmin account details and try again in a while.</p>
+
+  <h3>How do I back up my data?</h3>
+  <p>Open <strong>Settings &rarr; Backup &amp; Restore</strong>, then choose <strong>Create Backup&hellip;</strong> to save a backup file, or <strong>Restore from Backup&hellip;</strong> to restore from one.</p>
+
+  <h3>How do I send a diagnostic log?</h3>
+  <p>Open <strong>Settings &rarr; Advanced &rarr; Diagnostics &rarr; Reveal Logs</strong>, then attach the files from the folder that opens.</p>
+
+  <h2>General</h2>
+
+  <h3>Sync says &ldquo;up to date&rdquo;, but my new dives are not there.</h3>
+  <p>iCloud can take a moment to show new files. Wait a few seconds and tap <strong>Sync now</strong> again.</p>
+
+  <h3>Skooba says &ldquo;iCloud is full&rdquo;.</h3>
+  <p>Sync files are stored in your iCloud Drive, so new data cannot sync while your iCloud storage is full. Free up space or add storage in your Apple Account&rsquo;s iCloud settings, then sync again.</p>
+
+  <h3>The time of my imported dives looks wrong.</h3>
+  <p>Skooba keeps the date and time exactly as recorded in the file. Some apps and dive computers record times in their own time zone, so dives from another time zone can look shifted. You can correct a dive&rsquo;s date and time by editing the dive.</p>
+
+  <h3>Where is my data stored?</h3>
   <p>On your own devices and in your own iCloud Drive. Skooba has no account and no server. See the <a href="/privacy">Privacy Policy</a> for details.</p>
 </main>
 
